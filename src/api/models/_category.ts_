@@ -1,0 +1,36 @@
+import { Schema, model, Document } from 'mongoose'
+
+
+type Category<T> = {
+   [key: string]: {
+    text?: string,
+    tags?: string[],
+    keywords?: string[]
+    children?: T
+   }
+  }
+
+interface Node extends Category<Node> { }
+
+export interface ICategory{
+  locale: string
+  lastUpdate: Date
+  data: Node[]
+}
+
+export interface IntCategory extends Document, ICategory {}
+
+const categorySchema = new Schema<IntCategory>(
+  {
+  locale: { type: String, unique: true, required: true },
+  lastUpdated: { type: Date, default: Date.now },
+  data: {
+    type: Object,
+    required: true
+  }
+},
+  { collection: 'categories' },
+)
+const Category = model<IntCategory>('Category', categorySchema)
+
+export default Category

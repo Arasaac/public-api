@@ -1,0 +1,6 @@
+{
+  "jest.nodeEnv": {
+    "MONGO_DB_HOST": "inmemory",
+    "MONGO_AUTO_INDEX": true,
+  }
+}

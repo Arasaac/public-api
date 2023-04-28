@@ -1,0 +1,46 @@
+// {
+//   "version": "0.2.0",
+//   "configurations": [
+//     {
+//       "name": "ts-node",
+//       "type": "node",
+//       "request": "launch",
+//       "args": ["${workspaceFolder}/src/app.ts"],
+//       "runtimeArgs": ["-r", "tsconfig-paths/register", "--loader ts-node/esm"],
+//       "cwd": "${workspaceRoot}",
+//       "protocol": "inspector",
+//       "internalConsoleOptions": "openOnSessionStart"
+//     }
+//   ]
+// }
+
+{
+  "configurations": [
+  {
+    "console": "integratedTerminal",
+    "internalConsoleOptions": "neverOpen",
+    "name": "nodemon",
+    "program": "${workspaceFolder}/src/app.ts",
+    "request": "launch",
+    "restart": true,
+    "runtimeExecutable": "node_modules/.bin/nodemon",
+    "skipFiles": [
+      "<node_internals>/**"
+    ],
+    "type": "node",
+    "env": {
+        "ENV_FILE": "${workspaceFolder}/config/.env.dev"
+      }
+  },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "runtimeArgs": ["-r", "ts-node/register", "-r", "tsconfig-paths/register"],
+      "args": ["${workspaceFolder}/src/app.ts"],
+      "env": {
+        "ENV_FILE": "${workspaceFolder}/config/.env.dev"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  // 👇️ this may vary depending on how you
+  // name your test files
+  "exclude": [
+    "src/**/__tests__/*",
+    "bin/**/*",
+    "coverage/**/*",
+    "jest.config.js"
+  ]
+}
