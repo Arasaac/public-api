@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Public API for ARASAAC project",
   "main": "src/app.ts",
-  "repository": "git@github.com:losikov/api-example.git",
+  "repository": "git@github.com:Arasaac/public-api",
   "author": "Juan Daniel Burró",
   "license": "MIT",
   "scripts": {
