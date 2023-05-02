@@ -9,12 +9,13 @@ if [ -d "/run/secrets" ]; then
         secret_name=$(basename "${file}")
         # Check if secret ends with _FILE
         if echo "${secret_name}" | grep -q '_FILE$'; then
-            env_name=$(echo "${secret_name}" | sed 's/_FILE$//')
+            env_name=$(echo "${secret_name}" | sed 's/_FILE$//' | tr '[:lower:]' '[:upper:]')
             secret_value=$(cat "${file}")
             export "${env_name}"="${secret_value}"
         else
+            env_name=$(echo "${secret_name}" | tr '[:lower:]' '[:upper:]')
             secret_value=$(cat "${file}")
-            export "${secret_name}"="${secret_value}"
+            export "${env_name}"="${secret_value}"
         fi
     done
 else
