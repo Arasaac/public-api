@@ -2,27 +2,15 @@
     "openapi": "3.0.3",
     "info": {
         "title": "ARASAAC API",
-        "description": "Backend API example API declaration",
-        "termsOfService": "http://swagger.io/terms/",
-        "contact": {
-            "email": "juandacorreo@gmail.com"
-        },
-        "license": {
-            "name": "MIT",
-            "url": "https://opensource.org/licenses/MIT"
-        },
+        "description": "REST API for ARASAAC pictograms and related data.",
         "version": "1.0.0"
-    },
-    "externalDocs": {
-        "description": "Find out more about Swagger",
-        "url": "http://swagger.io"
     },
     "servers": [
         {
-            "url": "http://localhost:3000/v1"
+            "url": "https://beta.api.arasaac.org/v1"
         },
         {
-            "url": "http://localhost:3000/api"
+            "url": "https://beta.api.arasaac.org/api"
         }
     ],
     "tags": [
@@ -33,9 +21,61 @@
         {
             "name": "keywords",
             "description": "List of words (or phrases) to define ARASAAC pictograms. Used in ARASAAC website for autocompletation searchbox. See [https://arasaac.org/pictograms/search](https://arasaac.org/pictograms/search)."
+        },
+        {
+            "name": "pictograms",
+            "description": "ARASAAC pictograms"
+        },
+        {
+            "name": "materials",
+            "description": "Documents related to ARASAAC usage, uploaded by ARASAAC users"
+        },
+        {
+            "name": "phrases",
+            "description": "Natural language analysis about user searches or selections"
         }
     ],
     "paths": {
+        "/phrases/flex/{language}/{phrase}": {
+            "get": {
+                "operationId": "getFlex",
+                "x-eov-operation-handler": "phrases",
+                "description": "Get a phase in natural language based on pictogram keywords. It tries to convert sentences like *I + to eat + hamburger + yesterday* to  *I ate a hamburger yesterday*",
+                "tags": [
+                    "phrases"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/NLTKLanguage"
+                    },
+                    {
+                        "$ref": "#/components/parameters/Phrase"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An object with the list of keywords for the specified language.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PhraseResponse"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/keywords/{language}": {
             "get": {
                 "operationId": "getAll",
@@ -684,6 +724,27 @@
                     }
                 }
             },
+            "NLTKLanguage": {
+                "name": "language",
+                "description": "Languages than we currently support for natural language analysis.",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string",
+                    "enum": [
+                        "es"
+                    ]
+                }
+            },
+            "Phrase": {
+                "name": "phrase",
+                "description": "Phrase to convert to natural language.",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
             "Wordnet": {
                 "name": "wordnet",
                 "in": "path",
@@ -939,6 +1000,16 @@
                         "type": "string"
                     },
                     "err": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PhraseResponse": {
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "message": {
                         "type": "string"
                     }
                 }

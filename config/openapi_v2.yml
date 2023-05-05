@@ -1,3 +1,5 @@
+# TODO: sync with v1, tags and endpoint /phrases/flex/{language}/{phrase}
+
 openapi: 3.0.3
 info:
   title: ARASAAC API
