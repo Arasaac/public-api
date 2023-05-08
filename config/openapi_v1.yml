@@ -39,11 +39,11 @@ paths:
         - $ref: '#/components/parameters/IdPictograms'
       responses:
         '200':
-          description: An object with the list of keywords for the specified language.
+          description: Success
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
+                $ref: '#/components/schemas/PhraseResponse'
         '500':
           description: Error
           content:
@@ -64,11 +64,11 @@ paths:
         - $ref: '#/components/parameters/ExpectedPhrase'
       responses:
         '200':
-          description: An object with the list of keywords for the specified language.
+          description: Success
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
+                $ref: '#/components/schemas/PhraseResponse'
         '500':
           description: Error
           content:
@@ -800,13 +800,6 @@ components:
         err:
           type: string
 
-    PhraseResponse:
-      required:
-        - message
-      properties:
-        message:
-          type: string
-
     KeywordsResponse:
       type: object
       properties:
@@ -816,6 +809,12 @@ components:
           type: array
           items:
             type: string
+
+    PhraseResponse:
+      type: object
+      properties:
+        msg:
+          type: string
 
     UserProfileResponse:
       properties:
