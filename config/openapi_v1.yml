@@ -53,7 +53,7 @@ paths:
 
   '/phrases/report':
     post:
-      operationId: getReport
+      operationId: postReport
       x-eov-operation-handler: phrases
       description: 'Send a report when converting a sentence to natural language does not work as expected'
       tags:
