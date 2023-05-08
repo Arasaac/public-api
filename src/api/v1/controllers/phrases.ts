@@ -18,8 +18,8 @@ export async function getFlex(req: express.Request, res: express.Response): Prom
   try {
     const url = `http://arasaac_freeling:5000/flexionar?frase=${tenseParam}${phrase}`
     // get data from url using axios:
-    const { data } = await axios.get(url)
-    writeJsonResponse(res, 200, data)
+    const { data: msg } = await axios.get(url)
+    writeJsonResponse(res, 200, { msg })
   } catch (err) {
     logger.error(`Error getting getFlex for phrase ${phrase}. See error: ${err}`)
     writeJsonResponse(res, 500, {
@@ -35,7 +35,7 @@ export async function postReport(req: express.Request, res: express.Response): P
     console.log(`originalPhrase: ${originalPhrase}`)
     console.log(`returnedPrase: ${returnedPrase}`)
     console.log(`expectedPhrase: ${expectedPhrase}`)
-    writeJsonResponse(res, 200, 'ok')
+    writeJsonResponse(res, 200, { msg: 'received!' })
   } catch (err) {
     logger.error(`Error getting postReport for phrase ${originalPhrase}. See error: ${err}`)
     writeJsonResponse(res, 500, {
