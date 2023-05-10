@@ -13,6 +13,7 @@ export async function getFlex(req: express.Request, res: express.Response): Prom
 
   if (tense === 'future') tenseParam = '[F]'
   else if (tense === 'past') tenseParam = '[PP]'
+  else if (tense === 'present') tenseParam = '[P]'
   console.log(`idPittograms received: ${idPictograms}`)
 
   try {
@@ -30,10 +31,10 @@ export async function getFlex(req: express.Request, res: express.Response): Prom
 }
 
 export async function postReport(req: express.Request, res: express.Response): Promise<void> {
-  const { originalPhrase, returnedPrase, expectedPhrase } = req.query
+  const { originalPhrase, returnedPhrase, expectedPhrase } = req.query
   try {
     console.log(`originalPhrase: ${originalPhrase}`)
-    console.log(`returnedPrase: ${returnedPrase}`)
+    console.log(`returnedPrase: ${returnedPhrase}`)
     console.log(`expectedPhrase: ${expectedPhrase}`)
     writeJsonResponse(res, 200, { msg: 'received!' })
   } catch (err) {
