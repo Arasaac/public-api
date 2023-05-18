@@ -17,7 +17,7 @@ export async function getFlex(req: express.Request, res: express.Response): Prom
   console.log(`idPittograms received: ${idPictograms}`)
 
   try {
-    const url = `http://arasaac_freeling:5000/flexionar?frase=${tenseParam}${phrase}`
+    const url = `http://backend_freeling:5000/flexionar?frase=${tenseParam}${phrase}`
     // get data from url using axios:
     const { data: msg } = await axios.get(url)
     writeJsonResponse(res, 200, { msg })

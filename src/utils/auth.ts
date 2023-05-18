@@ -7,18 +7,15 @@ import jwt from 'jsonwebtoken'
 import logger from '@arasaac/utils/logger'
 import express from 'express'
 
-
 type User = {
-  id: string;
-  role: 'admin' | 'translator' | 'user';
-  scope: string[];
-  iss: string;
-  aud: string;
-  exp: number;
-  targetLanguages: string[];
+  id: string
+  role: 'admin' | 'translator' | 'user'
+  scope: string[]
+  iss: string
+  aud: string
+  exp: number
+  targetLanguages: string[]
 }
-
-
 
 // see https://gist.github.com/fgilio/230ccd514e9381fafa51608fcf137253 for axios catch errors
 
@@ -28,8 +25,8 @@ type User = {
 
 passport.use(
   new BearerStrategy(async (token: string, cb: any) => {
-    // const url = `http://auth/api/tokeninfo?access_token=${token}`
-    const url = `http://auth.arasaac.org/api/tokeninfo?access_token=${token}`
+    const url = `http://services_auth/api/tokeninfo?access_token=${token}`
+    // const url = `http://auth.arasaac.org/api/tokeninfo?access_token=${token}`
     try {
       if (!token) {
         logger.debug('Auth failed: No token!!')
@@ -65,23 +62,21 @@ passport.use(
 
 passport.use(new AnonymousStrategy())
 
-export const validate = (req: express.Request, scopes: String[], schema: any):Promise<true|false> => {
-
-    return new Promise((resolve, reject) => {
-      passport.authenticate('bearer', { session: false }, (err, user) => {
-        if (err) {
-          logger.error(err)
-          resolve(false)
-        }
+export const validate = (req: express.Request, scopes: String[], schema: any): Promise<true | false> => {
+  return new Promise((resolve, reject) => {
+    passport.authenticate('bearer', { session: false }, (err, user) => {
+      if (err) {
+        logger.error(err)
+        resolve(false)
+      }
       if (!user) {
         resolve(false)
       }
       req.user = user
       console.log(user)
       resolve(true)
-      })(req)
-    }) 
-  }
+    })(req)
+  })
+}
 
 export const getUserData = (req: express.Request) => req.user as User
-
