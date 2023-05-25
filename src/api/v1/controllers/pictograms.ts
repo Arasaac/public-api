@@ -195,11 +195,7 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
 
   try {
     const fileName = await getPNGFileName(file, options)
-    console.log(fileName, 'fileName')
     const exists = await fs.pathExists(fileName)
-    console.log(exists, 'exists')
-    console.log(url, req.params)
-    console.log(req.query, 'req.query')
     if (exists) {
       if (url)
         return res.json({
@@ -208,7 +204,6 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
       if (!download) return res.sendFile(fileName)
       return res.download(fileName)
     }
-    console.log(config.SVG_DIR, file, 'SVG_DIR, file')
     const svgContent = await fs.readFile(path.resolve(config.SVG_DIR, file), 'utf-8')
     let newSVGContent = modifySVG(svgContent, options)
     convertSVG(newSVGContent, options.resolution)
@@ -249,7 +244,6 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
 export const searchPictograms = async (req: express.Request, res: express.Response) => {
   const { language: locale } = req.params
   /* mongo doesn't have locale for br and val we do it here: */
-  console.log('***************************')
   let customLocale = locale
   if (customLocale === 'val') customLocale = 'ca'
   else if (customLocale === 'br') customLocale = 'pt'

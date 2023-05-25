@@ -159,8 +159,6 @@ export const getPictogramsBySynset = async (req: express.Request, res: express.R
 }
 
 export const getPictogramFileById = async (req: express.Request, res: express.Response) => {
-  // const prueba = { ...req.params, ...req.query }
-
   const {
     idPictogram = undefined,
     plural = false,
@@ -178,8 +176,7 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
   }
 
   const file = `${idPictogram}.svg`
-  /* eslint-disable multiline-ternary */
-  const url = req.params.url || false
+  const { url = false } = req.query
   const options = {
     plural,
     color,
@@ -192,8 +189,8 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
     identifierPosition,
   }
 
-  const download = req.params.download || false
-  /* eslint-enable multiline-ternary */
+  const { download = false } = req.query
+
   try {
     const fileName = await getPNGFileName(file, options)
     const exists = await fs.pathExists(fileName)
@@ -246,7 +243,6 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
 export const searchPictograms = async (req: express.Request, res: express.Response) => {
   const { language: locale } = req.params
   /* mongo doesn't have locale for br and val we do it here: */
-  console.log('***************************')
   let customLocale = locale
   if (customLocale === 'val') customLocale = 'ca'
   else if (customLocale === 'br') customLocale = 'pt'

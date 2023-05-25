@@ -27,6 +27,12 @@ export async function createServer(): Promise<Express> {
 
   server.use(bodyParser.json())
 
+  // Config parameters
+  logger.debug('Startup config parameters')
+  logger.debug(config)
+  logger.debug('Startup config parameters' + JSON.stringify(config))
+  logger.info(config)
+
   /* istanbul ignore next */
   if (config.morganLogger) {
     server.use(morgan(':method :url :status :response-time ms - :res[content-length]'))
