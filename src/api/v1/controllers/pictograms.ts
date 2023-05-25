@@ -178,8 +178,7 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
   }
 
   const file = `${idPictogram}.svg`
-  /* eslint-disable multiline-ternary */
-  const url = req.params.url || false
+  const { url = false } = req.query
   const options = {
     plural,
     color,
@@ -192,8 +191,8 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
     identifierPosition,
   }
 
-  const download = req.params.download || false
-  /* eslint-enable multiline-ternary */
+  const { download = false } = req.query
+
   try {
     const fileName = await getPNGFileName(file, options)
     console.log(fileName, 'fileName')
