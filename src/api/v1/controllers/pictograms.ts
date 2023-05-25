@@ -196,7 +196,11 @@ export const getPictogramFileById = async (req: express.Request, res: express.Re
   /* eslint-enable multiline-ternary */
   try {
     const fileName = await getPNGFileName(file, options)
+    console.log(fileName, 'fileName')
     const exists = await fs.pathExists(fileName)
+    console.log(exists, 'exists')
+    console.log(url, req.params)
+    console.log(req.query, 'req.query')
     if (exists) {
       if (url)
         return res.json({

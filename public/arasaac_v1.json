@@ -50,11 +50,60 @@
                     },
                     {
                         "$ref": "#/components/parameters/Phrase"
+                    },
+                    {
+                        "$ref": "#/components/parameters/Tense"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IdPictograms"
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "An object with the list of keywords for the specified language.",
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PhraseResponse"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/phrases/report": {
+            "post": {
+                "operationId": "postReport",
+                "x-eov-operation-handler": "phrases",
+                "description": "Send a report when converting a sentence to natural language does not work as expected",
+                "tags": [
+                    "phrases"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/OriginalPhrase"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnedPhrase"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ExpectedPhrase"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -703,6 +752,30 @@
     },
     "components": {
         "parameters": {
+            "Tense": {
+                "name": "tense",
+                "in": "query",
+                "description": "Force the verb tense for natural language.",
+                "schema": {
+                    "type": "string",
+                    "enum": [
+                        "future",
+                        "past",
+                        "present"
+                    ]
+                }
+            },
+            "IdPictograms": {
+                "name": "idPictograms",
+                "in": "query",
+                "description": "List of pictograms by id used in one sentence.",
+                "schema": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                }
+            },
             "Language": {
                 "name": "language",
                 "description": "Languages than we currently use for pictograms searches.",
@@ -740,6 +813,32 @@
                 "name": "phrase",
                 "description": "Phrase to convert to natural language.",
                 "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "OriginalPhrase": {
+                "name": "originalPhrase",
+                "description": "Phrase to convert to natural language.",
+                "in": "query",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "ExpectedPhrase": {
+                "name": "expectedPhrase",
+                "description": "Phrase expected from natural language processing.",
+                "in": "query",
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "ReturnedPhrase": {
+                "name": "returnedPhrase",
+                "description": "Phrase returned from natural language processing.",
+                "in": "query",
                 "required": true,
                 "schema": {
                     "type": "string"
@@ -841,8 +940,8 @@
                 "schema": {
                     "type": "string",
                     "enum": [
-                        "past",
-                        "future"
+                        "future",
+                        "past"
                     ]
                 }
             },
@@ -1004,16 +1103,6 @@
                     }
                 }
             },
-            "PhraseResponse": {
-                "required": [
-                    "message"
-                ],
-                "properties": {
-                    "message": {
-                        "type": "string"
-                    }
-                }
-            },
             "KeywordsResponse": {
                 "type": "object",
                 "properties": {
@@ -1025,6 +1114,14 @@
                         "items": {
                             "type": "string"
                         }
+                    }
+                }
+            },
+            "PhraseResponse": {
+                "type": "object",
+                "properties": {
+                    "msg": {
+                        "type": "string"
                     }
                 }
             },
