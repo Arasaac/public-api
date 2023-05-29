@@ -5,8 +5,8 @@ info:
   version: 1.0.0
 servers:
   # - url: https://api.arasaac.org/api/v1
-  - url: https://beta.api.arasaac.org/v1
-  - url: https://beta.api.arasaac.org/api
+  - url: https://api.arasaac.org/v1
+  - url: https://api.arasaac.org/api
 
 tags:
   - name: users

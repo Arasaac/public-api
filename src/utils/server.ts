@@ -51,7 +51,7 @@ export async function createServer(): Promise<Express> {
   server.use(passport.initialize())
   const swaggerJSON = {} as SwaggerDocs
 
-  const serverURL = config.NODE_ENV === 'production' ? 'https://beta.api.arasaac.org' : 'http://localhost:3000'
+  const serverURL = config.NODE_ENV === 'production' ? 'https://api.arasaac.org' : 'http://localhost:3000'
   const baseDir =
     config.NODE_ENV === 'production' ? path.join(process.cwd(), 'bin', 'api') : path.join(process.cwd(), 'src', 'api')
 
