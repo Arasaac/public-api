@@ -47,7 +47,8 @@ export const getPictogramById = async (req: express.Request, res: express.Respon
 }
 
 export const getPictogramByIdWithLocales = async (req: express.Request, res: express.Response) => {
-  const { idPictogram: _id, languages } = req.params
+  const { idPictogram: _id, languages:languagesList } = req.params
+  const languages = languagesList.split(',')
   const results = []
   try {
     for (const language of languages) {
