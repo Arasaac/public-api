@@ -159,8 +159,6 @@ export const getPictogramsBySynset = async (req: express.Request, res: express.R
 }
 
 export const getPictogramFileById = async (req: express.Request, res: express.Response) => {
-  // const prueba = { ...req.params, ...req.query }
-
   const {
     idPictogram = undefined,
     plural = false,
@@ -423,6 +421,12 @@ export const getSubcategories = (tree, categories) => {
 
 export const bestSearchPictograms = async (req: express.Request, res: express.Response) => {
   const { language: locale } = req.params
+  let customLocale = locale
+  if (customLocale === 'val') customLocale = 'ca'
+  else if (customLocale === 'br') customLocale = 'pt'
+  else if (customLocale === 'eu') customLocale = 'es'
+  else if (customLocale === 'an') customLocale = 'ca'
+
   logger.debug(`EXEC searchPictograms with locale ${locale} and searchText ${req.params.searchText}`)
 
   /* haremos búsqueda exacta */
@@ -439,6 +443,7 @@ export const bestSearchPictograms = async (req: express.Request, res: express.Re
         ],
         published: true,
       })
+      .collation({ locale: customLocale, strength: 1 })
       .select({ published: 0, validated: 0, available: 0, __v: 0 })
       .lean()
 
