@@ -19,8 +19,8 @@ export async function getFlex(req: express.Request, res: express.Response): Prom
   try {
     const url = `http://backend_freeling:5000/flexionar?frase=${tenseParam}${phrase}`
     // get data from url using axios:
-    const { data: msg } = await axios.get(url)
-    writeJsonResponse(res, 200, { msg })
+    const { data } = await axios.get(url)
+    writeJsonResponse(res, 200, { msg: data.toString() })
   } catch (err) {
     logger.error(`Error getting getFlex for phrase ${phrase}. See error: ${err}`)
     writeJsonResponse(res, 500, {
