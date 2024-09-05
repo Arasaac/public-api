@@ -5,6 +5,7 @@ const languages = [
   'br',
   'ca',
   'cs',
+  'da',
   'de',
   'en',
   'es',
