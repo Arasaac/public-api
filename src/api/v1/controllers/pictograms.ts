@@ -47,7 +47,7 @@ export const getPictogramById = async (req: express.Request, res: express.Respon
 }
 
 export const getPictogramByIdWithLocales = async (req: express.Request, res: express.Response) => {
-  const { idPictogram: _id, languages:languagesList } = req.params
+  const { idPictogram: _id, languages: languagesList } = req.params
   const languages = languagesList.split(',')
   const results = []
   try {
@@ -269,7 +269,7 @@ export const searchPictograms = async (req: express.Request, res: express.Respon
         ],
         published: true,
       })
-      .collation({ locale: customLocale, strength: 1 })
+      .collation({ locale: customLocale, strength: 1, caseFirst: 'off' })
       .select({ published: 0, validated: 0, available: 0, desc: 0, __v: 0 })
       .lean()
 
@@ -444,7 +444,7 @@ export const bestSearchPictograms = async (req: express.Request, res: express.Re
         ],
         published: true,
       })
-      .collation({ locale: customLocale, strength: 1 })
+      .collation({ locale: customLocale, strength: 1, caseFirst: 'off' })
       .select({ published: 0, validated: 0, available: 0, __v: 0 })
       .lean()
 

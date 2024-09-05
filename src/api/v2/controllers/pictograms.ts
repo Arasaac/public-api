@@ -270,7 +270,7 @@ export const searchPictograms = async (req: express.Request, res: express.Respon
         ],
         published: true,
       })
-      .collation({ locale: customLocale, strength: 1 })
+      .collation({ locale: customLocale, strength: 1, caseFirst: 'off' })
       .select({ published: 0, validated: 0, available: 0, desc: 0, __v: 0 })
       .lean()
 
@@ -444,7 +444,7 @@ export const bestSearchPictograms = async (req: express.Request, res: express.Re
         ],
         published: true,
       })
-      .collation({ locale: customLocale, strength: 1 })
+      .collation({ locale: customLocale, strength: 1, caseFirst: 'off' })
       .select({ published: 0, validated: 0, available: 0, __v: 0 })
       .lean()
 
