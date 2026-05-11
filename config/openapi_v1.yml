@@ -401,7 +401,7 @@ paths:
             - read
             - write
       responses:
-        200:
+        '200':
           description: User data like username, email, lists of favorites pictograms and materials.
           content:
             application/json:
@@ -776,6 +776,7 @@ components:
         - hr
         - hu
         - it
+        - is
         - ko
         - lt
         - lv
