@@ -104,7 +104,7 @@ export async function createServer(): Promise<Express> {
             apiSpec: yamlSpecFile,
             validateRequests: true, // (default)
             validateResponses: false, // false by default // if true 401 errors work wrong in v2????????
-            operationHandlers: path.join(process.cwd(), 'bin', 'api', `v1`, 'controllers'),
+            operationHandlers: path.join(baseDir, `v1`, 'controllers'),
             validateSecurity: {
               handlers: {
                 oAuth2: auth.validate,

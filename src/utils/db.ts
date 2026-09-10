@@ -36,8 +36,8 @@ class MongoConnection {
     try {
       if (config.mongo.host === 'inmemory') {
         logger.debug('connecting to inmemory mongo db')
-        this._mongoServer = new MongoMemoryServer()
-        const mongoUrl = await this._mongoServer.getConnectionString()
+        this._mongoServer = await MongoMemoryServer.create()
+        const mongoUrl = this._mongoServer.getUri()
         await mongoose.connect(mongoUrl, opts)
       } else {
         const databaseUrl = `mongodb://${config.mongo.user}:${config.mongo.pwd}@${config.mongo.host}:${config.mongo.port}/arasaac?authSource=admin`
@@ -70,8 +70,9 @@ class MongoConnection {
   public async close(): Promise<void> {
     try {
       await mongoose.disconnect()
-      if (config.mongo.host === 'inmemory') {
-        await this._mongoServer!.stop()
+      if (config.mongo.host === 'inmemory' && this._mongoServer) {
+        await this._mongoServer.stop()
+        this._mongoServer = undefined
       }
     } catch (err) {
       logger.error(`db.open: ${err}`)

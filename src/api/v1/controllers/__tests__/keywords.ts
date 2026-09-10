@@ -19,7 +19,7 @@ afterAll(async () => {
 
 describe('GET /keywords/', () => {
   it('should return 404 if url language parameter is empty', async () => {
-    const response = await request(server).get(`/api/v1/keywords`).set('Accept', 'application/json')
+    const response = await request(server).get(`/v1/keywords`).set('Accept', 'application/json')
 
     expect(response.headers['content-type']).toMatch(/json/)
     expect(response.status).toEqual(404)
@@ -37,19 +37,19 @@ describe('GET /keywords/', () => {
   })
   it('should return 200 & valid response for an available language', async () => {
     const keyword = await loadKeyword()
-    const response = await request(server).get(`/api/v1/keywords/${keyword.language}`).set('Accept', 'application/json')
+    const response = await request(server).get(`/v1/keywords/${keyword.language}`).set('Accept', 'application/json')
     expect(response.headers['content-type']).toMatch(/json/)
     expect(response.status).toEqual(200)
     expect(response.body).toMatchObject(keyword)
   })
   it('should return 404 for an unavailable language', async () => {
-    const response = await request(server).get(`/api/v1/keywords/kk`).set('Accept', 'application/json')
+    const response = await request(server).get(`/v1/keywords/kk`).set('Accept', 'application/json')
     const errMessage = {
       error: {
         type: 'request_validation',
         errors: [
           {
-            path: '.params.language',
+            path: '/params/language',
             errorCode: 'enum.openapi.validation',
           },
         ],

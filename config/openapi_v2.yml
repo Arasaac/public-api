@@ -16,6 +16,7 @@ externalDocs:
   url: http://swagger.io
 servers:
   - url: https://api.arasaac.org/api/v2
+  - url: https://api.arasaac.org/v2
   # - url: http://localhost:3000/v2
 
 tags:

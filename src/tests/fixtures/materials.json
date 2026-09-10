@@ -1,0 +1,431 @@
+[
+  {
+    "_id": "5f493c70f91a356e6f63fab0",
+    "created": "2018-11-15T06:20:54.000Z",
+    "downloads": 0,
+    "idMaterial": 1,
+    "lastUpdated": "2020-09-14T22:00:00.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Materiales TEACCH - Asociación Profesiones - Herramientas",
+        "desc": "Material manipulativo tipo TEACCH que contiene fichas de asociación de distintas profesiones con las acciones y herramientas que las representan.",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2022-01-04T09:14:17.490Z",
+        "lastUpdated": "2022-01-04T09:14:17.490Z"
+      },
+      {
+        "validated": true,
+        "title": "TEACCH Materialak - Lanbideak Elkartea - Tresnak",
+        "desc": "TEACCH motako material manipulatzailea, lanbide desberdinetako elkarte-txartelak biltzen dituena, horiek ordezkatzen dituzten ekintza eta tresnekin.",
+        "language": "none",
+        "lang": "eu",
+        "authors": [
+          {
+            "role": "translator",
+            "author": "5db182abb439f900014e94e9"
+          }
+        ],
+        "created": "2022-01-04T09:14:17.490Z",
+        "lastUpdated": "2022-01-04T09:14:17.490Z"
+      }
+    ],
+    "activities": [
+      10,
+      13,
+      14,
+      37
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      17,
+      18
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93ef"
+      },
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f0"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab1",
+    "created": "2018-06-10T06:57:58.000Z",
+    "downloads": 0,
+    "idMaterial": 2,
+    "lastUpdated": "2021-04-06T22:00:00.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Diccionario de Alimentos - De la A a la Z",
+        "desc": "   Presentación realizada en PowerPoint a modo de diccionario en la que aparecen distintos alimentos y sus definiciones en orden alfabético.  ",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2022-01-04T09:17:39.217Z",
+        "lastUpdated": "2022-01-04T09:17:39.217Z"
+      }
+    ],
+    "activities": [
+      22
+    ],
+    "areas": [
+      3,
+      5,
+      6,
+      8,
+      17
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f1"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab5",
+    "created": "2018-06-14T07:33:58.000Z",
+    "downloads": 0,
+    "idMaterial": 11,
+    "lastUpdated": "2023-02-19T18:02:53.778Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Recetas de cocina: Sandwich",
+        "desc": "Presentación en PowerPoint para elaborar sandwichs en el taller de cocina. ",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2020-10-07T13:42:14.451Z",
+        "lastUpdated": "2020-10-07T13:42:14.451Z"
+      },
+      {
+        "validated": true,
+        "lang": "pl",
+        "title": "TOSTY PRZEPIS",
+        "desc": " Przepis na robienie tostów z serem, szynką, ogórkiem kiszonym i ketchupem",
+        "language": "none",
+        "authors": [
+          {
+            "role": "translator",
+            "author": "63f23499c3a4420017c6be97"
+          }
+        ],
+        "created": "2023-02-19T18:02:53.782Z",
+        "lastUpdated": "2023-02-19T18:02:53.782Z"
+      }
+    ],
+    "activities": [
+      35
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      8,
+      26
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f2"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab3",
+    "created": "2009-06-13T10:30:31.000Z",
+    "downloads": 0,
+    "idMaterial": 8,
+    "lastUpdated": "2019-10-07T22:00:00.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Tablero de comunicación - Deportes paralímpicos",
+        "desc": "Tablero de comunicación donde están representados personas, acciones, objetos y lugares vinculados con el deporte paralímpico. Las imágenes relacionadas entre si están próximas para facilitar su localización.",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2020-10-12T04:45:48.478Z",
+        "lastUpdated": "2020-10-12T04:45:48.478Z"
+      }
+    ],
+    "activities": [
+      5,
+      38
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      21
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f2"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab2",
+    "created": "2009-06-13T10:28:26.000Z",
+    "downloads": 0,
+    "idMaterial": 7,
+    "lastUpdated": "2019-09-09T22:00:00.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Presentación - Paralimpiadas I",
+        "desc": "Presentación Power Point para confeccionar un montaje con fotos de atletas de las paralimpiadas y de nuestros alumnos. Escogeremos fotos de los deportes que nuestros alumnos realizan a diario y las equipararemos a las de los campeones paralímpicos.",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2020-10-12T04:46:25.800Z",
+        "lastUpdated": "2020-10-12T04:46:25.800Z"
+      }
+    ],
+    "activities": [
+      22
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      8,
+      21
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f2"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab7",
+    "created": "2009-06-13T15:05:34.000Z",
+    "downloads": 0,
+    "idMaterial": 13,
+    "lastUpdated": "2009-06-13T15:05:34.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "authors": [],
+        "created": "2009-06-13T15:05:34.000Z",
+        "desc": "Ficas para asociar cada dibujo con su pareja (Ej.- carta - buzón).",
+        "downloads": 0,
+        "lang": "es",
+        "language": "es",
+        "lastUpdated": "2009-06-13T15:05:34.000Z",
+        "title": "Parejas lógicas",
+        "validated": true
+      }
+    ],
+    "activities": [
+      14
+    ],
+    "areas": [
+      10,
+      3,
+      28,
+      6
+    ],
+    "authors": [
+      {
+        "author": "5db182abb439f900014e93f4",
+        "role": "author"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab9",
+    "created": "2009-06-13T11:00:50.000Z",
+    "downloads": 0,
+    "idMaterial": 6,
+    "lastUpdated": "2019-06-11T22:00:00.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Presentación - Paralimpiadas II - ¿Con qué?",
+        "desc": "Presentación PowerPoint donde hay que seleccionar el objeto que se utiliza en distintos deportes. Las diapositivas presentan objetos vinculados con refuerzos de autosuperación . ",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2020-10-12T04:45:23.388Z",
+        "lastUpdated": "2020-10-12T04:45:23.388Z"
+      }
+    ],
+    "activities": [
+      22
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      8,
+      21
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f2"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab4",
+    "created": "2018-11-16T10:03:43.000Z",
+    "downloads": 0,
+    "idMaterial": 1904,
+    "lastUpdated": "2018-11-16T10:03:43.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "authors": [],
+        "created": "2018-11-16T10:03:43.000Z",
+        "desc": "Cuaderno de comunicación con pictogramas para trabajar distintos contenidos y actividades referentes al huerto del colegio. Incluye varias fichas de trabajo y modelos de hojas de observación. En las hojas de observación, se rodea la estación, tiempo, clima, herramienta usada y tarea realizada. Además, pueden incluirse fotografías para colocar la foto de las personas realizando una tarea concreta.",
+        "downloads": 0,
+        "lang": "es",
+        "language": "es",
+        "lastUpdated": "2018-11-16T10:03:43.000Z",
+        "title": "Cuaderno de comunicación para el Huerto escolar",
+        "validated": true
+      }
+    ],
+    "activities": [
+      8,
+      38
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      17,
+      18,
+      26,
+      28
+    ],
+    "authors": [
+      {
+        "author": "5db182abb439f900014e9656",
+        "role": "author"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fabb",
+    "created": "2009-06-12T05:58:10.000Z",
+    "downloads": 0,
+    "idMaterial": 16,
+    "lastUpdated": "2020-10-10T10:37:43.114Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "Juego de la Oca",
+        "desc": "El Juego de la Oca es un juego de mesa para dos o más jugadores. Cada jugador avanza su ficha por la lámina dispuesta en forma de espiral con 23 casillas con pictogramas. El juego lo gana el primer jugador que llega a la casilla 23 donde esta la oca. En su turno cada jugador tira un dado que le indican el número de casillas que debe avanzar.Material necesario la lámina de la oca y unos cubiletes de colores con los dados y fichas.",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2020-10-10T10:37:43.116Z",
+        "lastUpdated": "2020-10-10T10:37:43.116Z"
+      }
+    ],
+    "activities": [
+      37,
+      16
+    ],
+    "areas": [
+      3,
+      6,
+      7,
+      12,
+      13
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f6"
+      },
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f7"
+      }
+    ]
+  },
+  {
+    "_id": "5f493c70f91a356e6f63fab8",
+    "created": "2009-06-12T05:45:24.000Z",
+    "downloads": 0,
+    "idMaterial": 12,
+    "lastUpdated": "2023-12-17T23:00:00.000Z",
+    "status": 1,
+    "translations": [
+      {
+        "validated": true,
+        "title": "La Navidad",
+        "desc": "Vocabulario de Navidad, asociado con su palabra correspondiente, y con la misma punteada para repasar. Incluye dibujos en blanco y negro para pintar. ",
+        "language": "es",
+        "lang": "es",
+        "authors": [],
+        "created": "2024-08-25T19:21:16.201Z",
+        "lastUpdated": "2024-08-25T19:21:16.201Z"
+      },
+      {
+        "validated": true,
+        "title": "O NADAL",
+        "desc": "Vocabulario de Nadal, asociando imaxe á palabra, en maiúsculas e as mesmas imaxes con palabras punteadas para repasar. Inclúe debuxos en branco e negro para pintar e escribir o nome.",
+        "language": "none",
+        "lang": "gl",
+        "authors": [
+          {
+            "role": "translator",
+            "author": "60c6626fc9e83d001c6069ab"
+          }
+        ],
+        "created": "2024-08-25T19:21:16.202Z",
+        "lastUpdated": "2024-08-25T19:21:16.202Z"
+      }
+    ],
+    "activities": [
+      14
+    ],
+    "areas": [
+      3,
+      6,
+      10,
+      17,
+      18,
+      19,
+      20
+    ],
+    "authors": [
+      {
+        "role": "author",
+        "author": "5db182abb439f900014e93f4"
+      }
+    ]
+  }
+]

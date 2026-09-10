@@ -22,7 +22,7 @@ afterAll(async () => {
 describe('v2 GET /keywords', () => {
   it('should return 401 if no token', async () => {
 
-    const response = await request(server).get(`/api/v2/keywords/en`).set('Accept', 'application/json')
+    const response = await request(server).get(`/v2/keywords/en`).set('Accept', 'application/json')
 
     expect(response.headers['content-type']).toMatch(/json/)
     expect(response.status).toEqual(401)

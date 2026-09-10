@@ -1,0 +1,971 @@
+[
+  {
+    "_id": 2248,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-12T10:05:23.000Z",
+    "downloads": 0,
+    "tags": [
+      "feeding",
+      "food",
+      "beverage",
+      "mineral rich food"
+    ],
+    "synsets": [
+      "07951744-n",
+      "14869913-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-05-29T14:55:44.924Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "agua",
+        "type": 2,
+        "meaning": "f. Sustancia cuyas moléculas están formadas por la combinación de un átomo de oxígeno y dos de hidrógeno, líquida, inodora, insípida e incolora. Es el componente más abundante de la superficie terrestre.",
+        "plural": "aguas",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "beverage",
+      "mineral rich food"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2256,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-12T10:29:21.000Z",
+    "downloads": 0,
+    "tags": [
+      "plant",
+      "tree",
+      "place",
+      "facility",
+      "recreational facility",
+      "leisure",
+      "playground"
+    ],
+    "synsets": [
+      "13124818-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-11-24T16:14:22.032Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "árbol",
+        "type": 2,
+        "meaning": " m. BOT. Planta perenne, de tronco leñoso y elevado, que se ramifica a cierta altura del suelo.",
+        "plural": "árboles",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "tree",
+      "playground"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2276,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-12T11:27:31.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "feeding",
+      "food",
+      "beverage",
+      "person",
+      "basic needs"
+    ],
+    "synsets": [
+      "01172332-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-11-27T09:53:44.716Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "beber",
+        "type": 3,
+        "meaning": "intr. Ingerir un líquido.",
+        "plural": "",
+        "hasLocution": true
+      },
+      {
+        "keyword": "tomar",
+        "type": 3,
+        "meaning": "tr. Comer o beber. ",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "verb",
+      "beverage",
+      "basic needs"
+    ],
+    "violence": false,
+    "hair": true,
+    "skin": true,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2317,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-13T09:54:31.000Z",
+    "downloads": 0,
+    "tags": [
+      "place",
+      "building",
+      "home",
+      "object"
+    ],
+    "synsets": [
+      "03549540-n",
+      "08094856-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2024-12-05T06:40:21.913Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "casa",
+        "type": 2,
+        "meaning": " f. Edificio o parte de él para vivir.",
+        "plural": "casas",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "residential building"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2349,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-13T11:01:55.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "feeding",
+      "food",
+      "person",
+      "basic needs",
+      "gastronomy"
+    ],
+    "synsets": [
+      "01170802-v",
+      "01159300-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2026-01-14T13:32:40.551Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "comer",
+        "type": 3,
+        "meaning": " intr. Masticar y desmenuzar el alimento en la boca y pasarlo al estómago. ",
+        "plural": "",
+        "hasLocution": true
+      },
+      {
+        "keyword": "tomar",
+        "type": 3,
+        "meaning": "tr. Comer o beber. ",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "verb",
+      "food",
+      "basic needs"
+    ],
+    "violence": false,
+    "hair": true,
+    "skin": true,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2369,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-13T12:39:21.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "person",
+      "basic needs",
+      "routine"
+    ],
+    "synsets": [
+      "00014735-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-12-03T19:31:27.552Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "dormir",
+        "type": 3,
+        "meaning": "intr. Estar en aquel reposo que consiste en la inacción o suspensión de los sentidos y de todo movimiento voluntario. ",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "verb",
+      "basic needs",
+      "routine"
+    ],
+    "violence": false,
+    "hair": true,
+    "skin": true,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2406,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-14T09:45:17.000Z",
+    "downloads": 0,
+    "tags": [
+      "animal",
+      "carnivorous",
+      "vertebrate",
+      "mammal",
+      "viviparous",
+      "terrestrial animal",
+      "pet",
+      "domestic"
+    ],
+    "synsets": [
+      "02124272-n",
+      "02124950-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2024-10-21T09:41:54.723Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "gato",
+        "type": 2,
+        "meaning": " m. y f. Mamífero carnívoro doméstico de cabeza redonda, lengua muy áspera, patas cortas armadas de uñas fuertes, agudas y retráctiles, pelaje espeso y suave, de diversos colores, y ojos cuya pupila se dilata para ver en la oscuridad.",
+        "plural": "gatos",
+        "hasLocution": true
+      },
+      {
+        "keyword": "minino",
+        "type": 2,
+        "meaning": " m. coloq. gato",
+        "plural": "mininos",
+        "hasLocution": true
+      },
+      {
+        "keyword": "gata",
+        "type": 2,
+        "hasLocution": false,
+        "plural": "gatas"
+      },
+      {
+        "keyword": "minina",
+        "type": 2,
+        "hasLocution": false,
+        "plural": "mininas"
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "carnivorous",
+      "mammal",
+      "viviparous",
+      "terrestrial animal",
+      "pet",
+      "domestic animal"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2439,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-14T10:58:08.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "leisure",
+      "sport",
+      "traditional game"
+    ],
+    "synsets": [
+      "02423786-v",
+      "02423521-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-11-22T06:27:55.575Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "jugar",
+        "type": 3,
+        "meaning": " intr. Entretenerse, divertirse tomando parte en uno de los juegos sometidos a reglas, medie o no en él interés.",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "verb",
+      "traditional game"
+    ],
+    "violence": false,
+    "hair": true,
+    "skin": true,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 2517,
+    "available": true,
+    "validated": true,
+    "created": "2007-12-17T09:56:09.000Z",
+    "downloads": 0,
+    "tags": [
+      "animal",
+      "carnivorous",
+      "vertebrate",
+      "mammal",
+      "viviparous",
+      "terrestrial animal",
+      "pet",
+      "domestic"
+    ],
+    "synsets": [
+      "02086723-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2024-10-21T09:42:03.926Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "perro",
+        "type": 2,
+        "meaning": " m. y f. Mamífero carnívoro doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, producto de las distintas razas obte nidas por hibridación, que está adaptado a todas las regiones de la Tierra; es fiel. ",
+        "plural": "perros",
+        "hasLocution": true
+      },
+      {
+        "keyword": "can",
+        "type": 2,
+        "meaning": " m. perro (&#8214; mamífero cánido).",
+        "plural": "canes",
+        "hasLocution": true
+      },
+      {
+        "keyword": "perra",
+        "type": 2,
+        "hasLocution": false,
+        "plural": "perras"
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "carnivorous",
+      "mammal",
+      "viviparous",
+      "terrestrial animal",
+      "pet",
+      "domestic animal"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 3057,
+    "available": true,
+    "validated": true,
+    "created": "2008-01-24T12:00:19.000Z",
+    "downloads": 0,
+    "tags": [
+      "plant",
+      "tree",
+      "summer",
+      "core vocabulary"
+    ],
+    "synsets": [
+      "13124818-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2021-02-05T09:00:28.985Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "árbol",
+        "type": 2,
+        "meaning": " m. BOT. Planta perenne, de tronco leñoso y elevado, que se ramifica a cierta altura del suelo.",
+        "plural": "árboles",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "tree",
+      "summer",
+      "core vocabulary-living being",
+      "core vocabulary-miscellaneous"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": true,
+    "aacColor": false,
+    "__v": 1
+  },
+  {
+    "_id": 3082,
+    "available": true,
+    "validated": true,
+    "created": "2008-01-24T12:25:09.000Z",
+    "downloads": 0,
+    "tags": [
+      "education",
+      "building",
+      "place",
+      "educational institution"
+    ],
+    "synsets": [
+      "04153115-n",
+      "08293641-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-11-20T19:32:38.243Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "colegio",
+        "type": 2,
+        "meaning": " m. Establecimiento de enseñanza. ",
+        "plural": "colegios",
+        "hasLocution": true
+      },
+      {
+        "keyword": "escuela",
+        "type": 2,
+        "meaning": " f. Establecimiento donde se imparte enseñanza, especialmente la obligatoria, colegio.",
+        "plural": "escuelas",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "educational building",
+      "educational_building",
+      "educational institution"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 3333,
+    "available": true,
+    "validated": true,
+    "created": "2008-02-01T13:33:33.000Z",
+    "downloads": 0,
+    "tags": [
+      "work",
+      "tool",
+      "secondary sector",
+      "carpentry",
+      "object"
+    ],
+    "synsets": [
+      "03040851-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2024-12-06T07:08:18.097Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Instrumento de hierro que sirve para agarrar fuertemente la madera y llevarla a donde se pretende, y que se usa para echar aros a las cubas, y en el oficio de portaventanero.",
+        "plural": "gatos",
+        "keyword": "gato",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "work tool",
+      "carpentry",
+      "object"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 6061,
+    "available": true,
+    "validated": true,
+    "created": "2008-11-20T10:18:39.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "usual verbs",
+      "feeding",
+      "food",
+      "beverage",
+      "person",
+      "basic needs",
+      "core vocabulary"
+    ],
+    "synsets": [
+      "01172332-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2021-05-11T11:43:09.356Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "beber",
+        "type": 3,
+        "meaning": "intr. Ingerir un líquido.",
+        "plural": "",
+        "hasLocution": true
+      },
+      {
+        "keyword": "tomar",
+        "type": 3,
+        "meaning": "tr. Comer o beber. ",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "usual verbs",
+      "beverage",
+      "basic needs",
+      "core vocabulary-communication"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": true,
+    "aac": true,
+    "aacColor": false,
+    "__v": 1
+  },
+  {
+    "_id": 6454,
+    "available": true,
+    "validated": true,
+    "created": "2008-12-01T10:03:10.000Z",
+    "downloads": 0,
+    "tags": [
+      "education",
+      "building",
+      "place",
+      "communication",
+      "signaling system"
+    ],
+    "synsets": [
+      "04153115-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-11-20T19:27:27.462Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "colegio",
+        "type": 2,
+        "meaning": " m. Establecimiento de enseñanza. ",
+        "plural": "colegios",
+        "hasLocution": true
+      },
+      {
+        "keyword": "escuela",
+        "type": 2,
+        "meaning": " f. Establecimiento donde se imparte enseñanza, especialmente la obligatoria, colegio.",
+        "plural": "escuelas",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "educational building",
+      "educational_building",
+      "signaling system"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 6456,
+    "available": true,
+    "validated": true,
+    "created": "2008-12-01T12:03:31.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "feeding",
+      "food",
+      "person",
+      "basic needs",
+      "core vocabulary",
+      "gastronomy"
+    ],
+    "synsets": [
+      "01170802-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2024-12-09T11:41:24.584Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "comer",
+        "type": 3,
+        "meaning": " intr. Masticar y desmenuzar el alimento en la boca y pasarlo al estómago. ",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "verb",
+      "food",
+      "basic needs",
+      "core vocabulary-communication",
+      "gastronomy"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": true,
+    "aac": true,
+    "aacColor": false,
+    "__v": 1
+  },
+  {
+    "_id": 6479,
+    "available": true,
+    "validated": true,
+    "created": "2008-12-01T13:10:54.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "usual verbs",
+      "person",
+      "basic needs",
+      "routine",
+      "core vocabulary"
+    ],
+    "synsets": [
+      "00014735-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2022-09-12T08:58:00.386Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "dormir",
+        "type": 3,
+        "meaning": "intr. Estar en aquel reposo que consiste en la inacción o suspensión de los sentidos y de todo movimiento voluntario. ",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "usual verbs",
+      "basic needs",
+      "routine",
+      "core vocabulary-communication"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": true,
+    "aac": true,
+    "aacColor": false,
+    "__v": 1
+  },
+  {
+    "_id": 6537,
+    "available": true,
+    "validated": true,
+    "created": "2008-12-02T10:35:20.000Z",
+    "downloads": 0,
+    "tags": [
+      "communication",
+      "language",
+      "verb",
+      "leisure",
+      "sport",
+      "traditional game",
+      "usual verbs",
+      "core vocabulary"
+    ],
+    "synsets": [
+      "02423786-v",
+      "02423521-v"
+    ],
+    "sex": false,
+    "lastUpdated": "2021-11-30T15:21:23.087Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "jugar",
+        "type": 3,
+        "meaning": " intr. Entretenerse, divertirse tomando parte en uno de los juegos sometidos a reglas, medie o no en él interés.",
+        "plural": "",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "verb",
+      "traditional game",
+      "usual verbs",
+      "core vocabulary-communication"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": true,
+    "aac": true,
+    "aacColor": false,
+    "__v": 1
+  },
+  {
+    "_id": 6889,
+    "available": true,
+    "validated": true,
+    "created": "2009-01-09T10:42:12.000Z",
+    "downloads": 0,
+    "tags": [
+      "feeding",
+      "food",
+      "mineral rich food",
+      "beverage"
+    ],
+    "synsets": [
+      "07951744-n",
+      "14869913-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2020-06-02T14:12:14.684Z",
+    "schematic": false,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "agua",
+        "type": 2,
+        "meaning": "f. Sustancia cuyas moléculas están formadas por la combinación de un átomo de oxígeno y dos de hidrógeno, líquida, inodora, insípida e incolora. Es el componente más abundante de la superficie terrestre.",
+        "plural": "aguas",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "mineral rich food",
+      "beverage"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": false,
+    "aacColor": false
+  },
+  {
+    "_id": 6964,
+    "available": true,
+    "validated": true,
+    "created": "2009-01-12T10:39:22.000Z",
+    "downloads": 0,
+    "tags": [
+      "place",
+      "building",
+      "home",
+      "core vocabulary",
+      "document",
+      "person",
+      "animal",
+      "domestic"
+    ],
+    "synsets": [
+      "03549540-n",
+      "08094856-n",
+      "08576692-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2025-10-27T16:03:54.158Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "casa",
+        "type": 2,
+        "meaning": " f. Edificio o parte de él para vivir.",
+        "plural": "casas",
+        "hasLocution": true
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "residential building",
+      "core vocabulary-place",
+      "document",
+      "person according to their age",
+      "domestic animal"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": true,
+    "aacColor": true,
+    "__v": 1
+  },
+  {
+    "_id": 7114,
+    "available": true,
+    "validated": true,
+    "created": "2009-01-15T10:48:30.000Z",
+    "downloads": 0,
+    "tags": [
+      "animal",
+      "carnivorous",
+      "vertebrate",
+      "mammal",
+      "viviparous",
+      "terrestrial animal",
+      "pet",
+      "domestic",
+      "core vocabulary"
+    ],
+    "synsets": [
+      "02124272-n",
+      "02124950-n"
+    ],
+    "sex": false,
+    "lastUpdated": "2024-10-21T09:40:34.637Z",
+    "schematic": true,
+    "published": true,
+    "keywords": [
+      {
+        "keyword": "gato",
+        "type": 2,
+        "meaning": " m. y f. Mamífero carnívoro doméstico de cabeza redonda, lengua muy áspera, patas cortas armadas de uñas fuertes, agudas y retráctiles, pelaje espeso y suave, de diversos colores, y ojos cuya pupila se dilata para ver en la oscuridad.",
+        "plural": "gatos",
+        "hasLocution": true
+      },
+      {
+        "keyword": "minino",
+        "type": 2,
+        "meaning": " m. coloq. gato",
+        "plural": "mininos",
+        "hasLocution": true
+      },
+      {
+        "keyword": "gata",
+        "type": 2,
+        "hasLocution": false,
+        "plural": "gatas"
+      },
+      {
+        "keyword": "minina",
+        "type": 2,
+        "hasLocution": false,
+        "plural": "mininas"
+      }
+    ],
+    "desc": "",
+    "categories": [
+      "carnivorous",
+      "mammal",
+      "viviparous",
+      "terrestrial animal",
+      "pet",
+      "domestic animal",
+      "core vocabulary-living being"
+    ],
+    "violence": false,
+    "hair": false,
+    "skin": false,
+    "aac": true,
+    "aacColor": false,
+    "__v": 1
+  }
+]
