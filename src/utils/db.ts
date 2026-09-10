@@ -1,7 +1,6 @@
 /* istanbul ignore file */
 
 import mongoose from 'mongoose'
-import { MongoMemoryServer } from 'mongodb-memory-server'
 
 import config from '@arasaac/config'
 import logger from '@arasaac/utils/logger'
@@ -23,7 +22,7 @@ const opts = {
 class MongoConnection {
   private static _instance: MongoConnection
 
-  private _mongoServer?: MongoMemoryServer
+  private _mongoServer?: any
 
   static getInstance(): MongoConnection {
     if (!MongoConnection._instance) {
@@ -36,6 +35,8 @@ class MongoConnection {
     try {
       if (config.mongo.host === 'inmemory') {
         logger.debug('connecting to inmemory mongo db')
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const { MongoMemoryServer } = require('mongodb-memory-server')
         this._mongoServer = await MongoMemoryServer.create()
         const mongoUrl = this._mongoServer.getUri()
         await mongoose.connect(mongoUrl, opts)

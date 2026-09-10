@@ -19,7 +19,7 @@ export async function seedDatabase(): Promise<void> {
     if (docs.length > 0) {
       await col.insertMany(docs)
     }
-    await col.createIndex({ "keywords.keyword": "text", tags: "text" }, { weights: { "keywords.keyword": 10, tags: 1 }, default_language: "none", language_override: "language" })
+    await col.createIndex({ "keywords.keyword": "text", tags: "text" }, { weights: { "keywords.keyword": 10, tags: 1 }, default_language: "none", language_override: "language" } as any)
   }
 
   // 2. Seed pictos_en
@@ -36,7 +36,7 @@ export async function seedDatabase(): Promise<void> {
     if (docs.length > 0) {
       await col.insertMany(docs)
     }
-    await col.createIndex({ "keywords.keyword": "text", tags: "text" }, { weights: { "keywords.keyword": 10, tags: 1 }, default_language: "none", language_override: "language" })
+    await col.createIndex({ "keywords.keyword": "text", tags: "text" }, { weights: { "keywords.keyword": 10, tags: 1 }, default_language: "none", language_override: "language" } as any)
   }
 
   // 3. Seed materials
@@ -67,7 +67,7 @@ export async function seedDatabase(): Promise<void> {
     if (docs.length > 0) {
       await col.insertMany(docs)
     }
-    await col.createIndex({ "translations.title": "text", "translations.desc": "text" }, { weights: { "translations.desc": 1, "translations.title": 30 }, default_language: "spanish", language_override: "language" })
+    await col.createIndex({ "translations.title": "text", "translations.desc": "text" }, { weights: { "translations.desc": 1, "translations.title": 30 }, default_language: "spanish", language_override: "language" } as any)
   }
 
   // 4. Seed synsets

@@ -4,6 +4,7 @@
   // name your test files
   "exclude": [
     "src/**/__tests__/*",
+    "src/tests/**/*",
     "bin/**/*",
     "coverage/**/*",
     "jest.config.js"
