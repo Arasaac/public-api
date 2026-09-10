@@ -1,3 +1,5 @@
 bin
 coverage
 node_modules
+public/arasaac_v1.json
+public/arasaac_v2.json

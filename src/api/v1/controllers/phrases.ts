@@ -7,14 +7,13 @@ import axios from 'axios'
 
 export async function getFlex(req: express.Request, res: express.Response): Promise<void> {
   const { phrase } = req.params
-  const { tense, idPictograms } = req.query
+  const { tense } = req.query
   let tenseParam = ''
   // [PP] pretérito perfecto simple,  [PI] pretérito imperfecto, [F] Futuro
 
   if (tense === 'future') tenseParam = '[F]'
   else if (tense === 'past') tenseParam = '[PP]'
   else if (tense === 'present') tenseParam = '[P]'
-  console.log(`idPittograms received: ${idPictograms}`)
 
   try {
     const url = `http://backend_freeling:5000/flexionar?frase=${tenseParam}${phrase}`
