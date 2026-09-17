@@ -5,7 +5,7 @@ ENV NODE_ENV=production
 ENV PORT=3000 
 
 # Set working directory
-RUN mkdir /app
+RUN mkdir -p /app/public
 WORKDIR /app
 
 # set locale

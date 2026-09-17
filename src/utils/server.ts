@@ -71,15 +71,32 @@ export async function createServer(): Promise<Express> {
     },
   }
 
+  const publicDir = path.resolve(process.cwd(), 'public')
+  if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true })
+  }
+
   for (const v of versions) {
     try {
       const yamlSpecFile = `./config/openapi_v${v}.yml`
       const apiDefinition = yaml.load(fs.readFileSync(yamlSpecFile, 'utf8'))
       swaggerJSON[v] = JSON.stringify(apiDefinition, null, 4)
-      const fileName = path.join(`./public/arasaac_v${v}.json`)
-      fs.writeFile(fileName, swaggerJSON[v], function (err) {
-        if (err) return console.log(err)
+      const fileName = path.join(publicDir, `arasaac_v${v}.json`)
+      try {
+        fs.writeFileSync(fileName, swaggerJSON[v])
         logger.info(`arasaac.json file for version ${v} generated at ${fileName}`)
+      } catch (err) {
+        logger.error(`arasaac.json file could not be generated: ${err}`)
+      }
+
+      server.get(`/arasaac_v${v}.json`, (req, res) => {
+        res.setHeader('Content-Type', 'application/json')
+        res.send(swaggerJSON[v])
+      })
+
+      server.get(`/arasaac_${v}.json`, (req, res) => {
+        res.setHeader('Content-Type', 'application/json')
+        res.send(swaggerJSON[v])
       })
 
       server.use(
