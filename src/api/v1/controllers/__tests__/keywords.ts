@@ -4,6 +4,7 @@ import { Express } from 'express-serve-static-core'
 import db from '@arasaac/utils/db'
 import { createServer } from '@arasaac/utils/server'
 import { loadKeyword } from '@arasaac/tests/keyword'
+import Keyword from '@arasaac/api/models/Keywords'
 import { OutgoingHttpHeaders } from 'http'
 
 let server: Express
@@ -41,6 +42,15 @@ describe('GET /keywords/', () => {
     expect(response.headers['content-type']).toMatch(/json/)
     expect(response.status).toEqual(200)
     expect(response.body).toMatchObject(keyword)
+  })
+  it('should return 200 & valid response for Slovenian (sl)', async () => {
+    const slKeyword = { language: 'sl', words: ['dom', 'šola'] }
+    const dbKeyword = new Keyword(slKeyword)
+    await dbKeyword.save()
+    const response = await request(server).get(`/v1/keywords/sl`).set('Accept', 'application/json')
+    expect(response.headers['content-type']).toMatch(/json/)
+    expect(response.status).toEqual(200)
+    expect(response.body).toMatchObject(slKeyword)
   })
   it('should return 404 for an unavailable language', async () => {
     const response = await request(server).get(`/v1/keywords/kk`).set('Accept', 'application/json')

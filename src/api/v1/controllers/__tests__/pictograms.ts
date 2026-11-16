@@ -30,6 +30,11 @@ describe('Pictograms API v1', () => {
       const response = await request(server).get('/v1/pictograms/es/999999')
       expect(response.status).toBe(404)
     })
+
+    it('should accept sl (Slovenian) and return 404 for non-existent pictogram id', async () => {
+      const response = await request(server).get('/v1/pictograms/sl/999999')
+      expect(response.status).toBe(404)
+    })
   })
 
   describe('GET /v1/pictograms/{language}/bestsearch/{searchText}', () => {
