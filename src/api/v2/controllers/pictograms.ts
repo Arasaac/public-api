@@ -16,6 +16,7 @@ import { convertSVG, getPNGFileName, modifySVG } from '@arasaac/utils/svg'
 const removeDiacritics = require('@arasaac/utils/removeDiacritics')
 
 import config from '@arasaac/config'
+import { sendCatalog, clearCatalogHeaders, PRIVATE_CATALOG_CACHE } from '@arasaac/utils/catalogCache'
 
 const Synsets = require('@arasaac/api/models/Synsets')
 const Pictograms = languages.reduce((dict, language) => {
@@ -91,30 +92,31 @@ export const getPictogramByIdWithLocales = async (req: express.Request, res: exp
 }
 
 export const getAllPictograms = async (req: express.Request, res: express.Response) => {
-  logger.debug(`Get list of all pictograms`)
   const { language } = req.params
-
+  logger.debug(`${req.method} list of all pictograms for language ${language}`)
   try {
-    let pictogram = await Pictograms[language].find(
-      { published: true },
-      { published: 0, validated: 0, available: 0, desc: 0, __v: 0 },
+    return await sendCatalog(
+      req,
+      res,
+      Pictograms[language],
+      () =>
+        Pictograms[language]
+          .find({ published: true }, { published: 0, validated: 0, available: 0, desc: 0, __v: 0 })
+          .lean(),
+      PRIVATE_CATALOG_CACHE,
     )
-    if (!pictogram) {
-      logger.debug(`No pictograms found`)
-      return res.status(404).json({
-        error: `No pictograms found`,
-      })
-    }
-    logger.debug(`Pictograms found`)
-    return res.json(pictogram)
   } catch (err) {
     logger.error(`Error getting pictograms. See error: ${err}`)
+    clearCatalogHeaders(res)
     return res.status(500).json({
       message: 'Error getting pictograms. See error field for detail',
       error: err,
     })
   }
 }
+
+// HEAD /pictograms/all/{language}: same headers as GET, no body and no big query
+export const headAllPictograms = getAllPictograms
 
 export const getPictogramsBySynset = async (req: express.Request, res: express.Response) => {
   let { synset, wordnet } = req.params
