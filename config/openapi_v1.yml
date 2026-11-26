@@ -112,13 +112,28 @@ paths:
         - $ref: '#/components/parameters/Language'
       responses:
         '200':
-          description: Success
+          description: Success. Includes ETag, Last-Modified and Cache-Control headers
+        '304':
+          description: Not modified (If-None-Match / If-Modified-Since)
         '500':
           description: Error generating pictograms data
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
+    head:
+      operationId: headAllPictograms
+      x-eov-operation-handler: pictograms
+      description: Same headers as GET (ETag, Last-Modified, Cache-Control) without body, to check if the catalog changed.
+      tags:
+        - pictograms
+      parameters:
+        - $ref: '#/components/parameters/Language'
+      responses:
+        '200':
+          description: Catalog headers
+        '304':
+          description: Not modified
 
   /pictograms/{idPictogram}:
     get:
